@@ -1,6 +1,8 @@
 {
   "name": "fabians-tracker",
   "packageManager": "yarn@3.1.1",
+  "source": "src/index.html",
+  "distDir": "docs",
   "devDependencies": {
     "@parcel/transformer-sass": "2.3.1",
     "parcel": "^2.3.1",
