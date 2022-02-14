@@ -44,11 +44,11 @@ article {
         place-items: stretch;
     
         button {
-            font-size: 3vh;
+            font-size: minmax(large, 3vh);
         }
         .amount {
             place-self: center;
-            font-size: 10vh;
+            font-size: minmax(large, 10vh);
         }
     }
 
