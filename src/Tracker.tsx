@@ -1,7 +1,7 @@
 export function Tracker({ successes, failures, name }) {
     return (
         <article>
-            <h1>{name}</h1>
+            <header>{name}</header>
             <div className="counter erfolg">
                 <button onClick={() => successes[1](--successes[0])}>-</button>
                 <div className="amount">{successes[0]}</div>
