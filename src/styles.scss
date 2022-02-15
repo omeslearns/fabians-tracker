@@ -5,6 +5,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 main {
     width: 100vw;
     height: 100vh;
@@ -13,42 +17,38 @@ main {
     place-items: stretch;
     gap: 1rem;
     grid:
-        1fr 1fr
-        / 1fr 1fr;
-
-    // & > article {
-    //     height: 49vh;
-    // }
+        45% 45%
+        / 50% 50%;
 }
 
 article {
     display: grid;
     gap: 0.5rem;
     grid:
-        "title title" minmax(min-content, 1fr)
-        "left right" 3fr
-        / 50fr 50fr;
+        "title title" 25%
+        "left right" 75%
+        / 50% 50%;
 
     header {
         grid-area: title;
-        font-size: 4vh;
+        font-size: 5vh;
         place-self: center;
     }
 
     .counter {
         display: grid;
         grid:
-            "top" 20fr
-            "mid" 60fr
-            "bot" 20fr;
+            "top" 20%
+            "mid" 60%
+            "bot" 20%;
         place-items: stretch;
-    
+
         button {
-            font-size: minmax(large, 3vh);
+            font-size: 5vh;
         }
         .amount {
             place-self: center;
-            font-size: minmax(large, 10vh);
+            font-size: 15vh;
         }
     }
 
